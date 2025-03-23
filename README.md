@@ -80,3 +80,19 @@ Note, the file is stored in `./target/debug` for faster execution. If you want t
 # Create binary file optimized for release
 cargo run --release
 ```
+
+## Data
+
+The Boston Housing Prices dataset can be downloaded from, if you dont ant to download it dynamically in the code:
+
+https://github.com/selva86/datasets/blob/master/BostonHousing.csv
+
+I placed it in the folder ./house-price-predictor/data/ and downlaoded it dynamically form thsi link: https://raw.githubusercontent.com/selva86/datasets/master/BostonHousing.csv
+
+## Install Library in Rust
+
+Features ensure that we only install the necessary functionality, not anything which we would not use.
+
+```bash
+cagro add <LIBRARY_NAME> --features <SUB_FEATURE_NAME>
+```
